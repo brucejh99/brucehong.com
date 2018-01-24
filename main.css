@@ -118,10 +118,12 @@ body, html {
     height: 55px;
     width: 55px;
     margin: 0 auto;
+    filter: grayscale(100%);
 }
 
 .fb:hover {
-    opacity: 1;
+    filter: grayscale(10%);
+    opacity: 0.9;
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -130,22 +132,26 @@ body, html {
     height: 55px;
     width: 55px;
     margin: 0 auto;
+    filter: grayscale(100%);
 }
 
 .git:hover {
-    opacity: 1;
+    filter: grayscale(10%);
+    opacity: 0.9;
     transition: opacity 0.5s ease-in-out;
 }
 
 .email {
     opacity: 0.7;
+    height: 55px;
     width: 55px;
-    height: 50px;
     margin: 0 auto;
+    filter: grayscale(100%);
 }
 
 .email:hover {
-    opacity: 1;
+    filter: grayscale(10%);
+    opacity: 0.9;
     transition: opacity 0.5s ease-in-out;
 }
 
