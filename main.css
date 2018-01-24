@@ -122,6 +122,7 @@ body, html {
 
 .fb:hover {
     opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .git {
@@ -133,6 +134,7 @@ body, html {
 
 .git:hover {
     opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .email {
@@ -144,6 +146,7 @@ body, html {
 
 .email:hover {
     opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .center {
