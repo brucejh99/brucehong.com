@@ -42,7 +42,7 @@ body, html {
     background-image: url('backgrounds/pier-background.jpg');
 
     /* Height */
-    height: 65%;
+    height: auto%;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -99,7 +99,7 @@ body, html {
     margin-top: 0%;
     margin-right: 0%;
     margin-left: 25%;
-    margin-bottom: 0%;
+    padding-bottom: 50px;
 }
 
 .page-title-std {
