@@ -174,27 +174,19 @@ body, html {
     width: 100%;
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 750px) {
+    
+    .menu-title {
+        top: 20%;
+    }
     
     .menu-subtitle {
-        height: auto;
-        width: 100%;
-        font-family: 'Sedgwick Ave', cursive;
-        font-size: 45px;
-        background: rgba(150, 150, 150, 0);
-        margin: 0%;
-        top: 28%;
-        position: relative;
-        text-align: center;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        top: 15%;
     }
     
     .right-box {
         height: auto;
         width: auto;
-        font-family: sans-serif;
-        background: rgba(255, 255, 255, 0.8);
         margin-top: 0%;
         margin-right: 0%;
         margin-left: 0vw;
@@ -206,7 +198,7 @@ body, html {
         padding-left: 5%;
         padding-right: 5%;
         font-family: sans-serif;
-        font-size: 36px;
+        font-size: 38px;
         text-align: center;
     }
 
@@ -223,36 +215,17 @@ body, html {
         padding-top: 2%;
         padding-bottom: 7%;
         font-family: sans-serif;
-        font-size: 30px;
+        font-size: 26px;
         text-align: center;
     }
     
     .second-parallax {
-        /* Image */
-        background-image: url('backgrounds/dc-background.jpg');
-
-        /* Height */
         height: auto;
         width: auto;
-
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
     .third-parallax {
-        /* Image */
-        background-image: url('backgrounds/pier-background.jpg');
-        
-        /* Height */
         height: auto;
-
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        width: auto;
     }
 }
