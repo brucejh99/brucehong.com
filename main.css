@@ -23,9 +23,9 @@ body, html {
     background-size: cover;
 }
 
-.db-parallax {
+.second-parallax {
     /* Image */
-    background-image: url('backgrounds/diamondback-background.jpg');
+    background-image: url('backgrounds/dc-background.jpg');
 
     /* Height */
     height: 60%;
@@ -42,7 +42,7 @@ body, html {
     background-image: url('backgrounds/pier-background.jpg');
 
     /* Height */
-    height: 75%;
+    height: 65%;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -55,17 +55,31 @@ body, html {
     height: auto;
     width: 100%;
     font-family: 'Work Sans', sans-serif;
-    font-size: 80px;
+    font-size: 90px;
     background: rgba(150, 150, 150, 0);
-    margin: 0%;
+    margin-top: 0%;
+    top: 35%;
     position: relative;
-    top: 23%;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 .menu-subtitle {
+    height: auto;
+    width: 100%;
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 45px;
+    background: rgba(150, 150, 150, 0);
+    margin: 0%;
+    top: 30%;
+    position: relative;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.menu-icons {
     height: auto;
     width: 200px;
     font-family: sans-serif;
@@ -114,7 +128,7 @@ body, html {
 }
 
 .fb {
-    opacity: 0.7;
+    opacity: 0.6;
     height: 55px;
     width: 55px;
     margin: 0 auto;
@@ -123,12 +137,12 @@ body, html {
 
 .fb:hover {
     filter: grayscale(10%);
-    opacity: 0.9;
+    opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
 
 .git {
-    opacity: 0.7;
+    opacity: 0.6;
     height: 55px;
     width: 55px;
     margin: 0 auto;
@@ -137,12 +151,12 @@ body, html {
 
 .git:hover {
     filter: grayscale(10%);
-    opacity: 0.9;
+    opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
 
 .email {
-    opacity: 0.7;
+    opacity: 0.6;
     height: 55px;
     width: 55px;
     margin: 0 auto;
@@ -151,7 +165,7 @@ body, html {
 
 .email:hover {
     filter: grayscale(10%);
-    opacity: 0.9;
+    opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
 
