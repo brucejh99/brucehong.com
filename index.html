@@ -9,11 +9,44 @@
         <style>
             @import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave|Work+Sans');
         </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
     </head>
  
 <body>
     
-    <div class="main-parallax">
+    <div class="main-parallax" id="home">
+        
+        <div class="navbar">
+            <a class="navigation" href="#home">Home</a>
+            <a class="navigation" href="#intro">About</a>
+            <a class="navigation" href="#blog-title">Blog</a>
+        </div>
         
         <h1 class="menu-title" style="color: rgb(94, 79, 75)">Hi, I'm Bruce.</h1>
         <h2 class="menu-subtitle" style="color:cornsilk">Welcome to my site!</h2>
@@ -32,9 +65,18 @@
         </h1>
     </div>
     
+    <div class="title-section" id="intro">
+        <p class="section-title-std">Who am I?</p>
+    </div>
+    
     <div class="second-parallax">
         <div class="right-box">
-            <div class="text-std" style="padding-top: 13%">I'm a first year Computer Science and Business Administration undergraduate student at the University of Waterloo and Wilfrid Laurier University. This is the site where I'll be writing some blogs and keeping a resume. Please excuse the appearance for now as it's still a work in progress...</div></div>
+            <div class="text-std" style="padding-top: 13%">I'm a first year Computer Science and Business Administration undergraduate student at the University of Waterloo and Wilfrid Laurier University. This is the site where I'll be writing some blogs and keeping a resume. Please excuse the appearance for now as it's still a work in progress...</div>
+        </div>
+    </div>
+    
+    <div class="title-section" id="blog-title">
+        <p class="section-title-std">Blog</p>
     </div>
 
     <div class="third-parallax">

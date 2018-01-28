@@ -8,6 +8,40 @@ body, html {
     max-width: 100%;
 }
 
+.navbar {
+    background-color: rgba(94, 79, 75, 0.7);
+    height: 10vh;
+}
+
+.navbar a:hover {
+    background: cornsilk;
+    color: rgb(94, 79, 75);
+}
+
+.navigation {
+    height: 100%;
+    cursor: pointer;
+    background-color: rgba(150, 150, 150, 0);
+    text-decoration: none;
+    color: cornsilk;
+    line-height: 10vh;
+    vertical-align: middle;
+    padding-right: 5%;
+    padding-left: 5%;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 32px;
+}
+
+.title-section {
+    background-color: rgb(84, 79, 75);
+    height: auto;
+    align-content: center;
+    margin-bottom: 0%;
+    padding-bottom: 4%;
+}
+
 .main-parallax {
     /* Image */
     background-image: url('backgrounds/sea-to-sky-background.jpg');
@@ -42,7 +76,7 @@ body, html {
     background-image: url('backgrounds/pier-background.jpg');
 
     /* Height */
-    height: auto%;
+    height: auto;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -58,7 +92,7 @@ body, html {
     font-size: 90px;
     background: rgba(150, 150, 150, 0);
     margin-top: 0%;
-    top: 30%;
+    top: 22%;
     position: relative;
     text-align: center;
     padding-top: 10px;
@@ -72,11 +106,11 @@ body, html {
     font-size: 45px;
     background: rgba(150, 150, 150, 0);
     margin: 0%;
-    top: 28%;
+    top: 20%;
     position: relative;
     text-align: center;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 20px;
 }
 
 .menu-icons {
@@ -91,6 +125,17 @@ body, html {
     left: 10px;
 }
 
+.section-title-std {
+    text-align: center;
+    color: cornsilk;
+    background: hidden;
+    margin-top: 0%;
+    padding-top: 4%;
+    margin-bottom: 0%;
+    font-size: 60px;
+    font-family: 'Work Sans', sans-serif;
+}
+
 .right-box {
     width: auto;
     font-family: sans-serif;
@@ -102,6 +147,7 @@ body, html {
 }
 
 .page-title-std {
+    margin-top: 0;
     padding-top: 5%;
     padding-left: 5%;
     padding-right: 5%;
@@ -128,7 +174,7 @@ body, html {
 }
 
 .fb {
-    opacity: 0.6;
+    opacity: 0.4;
     height: 55px;
     width: 55px;
     margin: 0 auto;
@@ -142,7 +188,7 @@ body, html {
 }
 
 .git {
-    opacity: 0.6;
+    opacity: 0.4;
     height: 55px;
     width: 55px;
     margin: 0 auto;
@@ -156,7 +202,7 @@ body, html {
 }
 
 .email {
-    opacity: 0.6;
+    opacity: 0.4;
     height: 55px;
     width: 55px;
     margin: 0 auto;
@@ -175,6 +221,10 @@ body, html {
 }
 
 @media only screen and (max-width: 750px) {
+    
+    .navigation {
+        font-size: 28px;
+    }
     
     .menu-title {
         top: 20%;
