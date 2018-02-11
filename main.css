@@ -86,7 +86,8 @@ body, html {
 }
 
 .resume {
-    width: 15vw;;
+    width: 15vw;
+    cursor: pointer;
     background-color: cornsilk;
     text-decoration: none;
     color: rgb(94, 79, 75);
@@ -100,9 +101,10 @@ body, html {
     display: inline-block;
 }
 
-.resume a:hover {
-    background: cornsilk;
-    color: rgb(94, 79, 75);
+.resume:hover {
+    color: cornsilk;
+    background: rgb(94, 79, 75);
+    opacity: 1;
 }
 
 .menu-title {
