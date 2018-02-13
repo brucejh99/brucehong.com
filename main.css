@@ -86,13 +86,14 @@ body, html {
 }
 
 .resume {
-    width: 15vw;
     cursor: pointer;
     background-color: cornsilk;
     text-decoration: none;
     color: rgb(94, 79, 75);
     vertical-align: middle;
     text-align: center;
+    padding-right: 2.5vw;
+    padding-left: 2.5vw;
     font-family: 'Work Sans', sans-serif;
     font-size: 32px;
     border-color: rgb(94, 79, 75);
@@ -232,7 +233,7 @@ body, html {
 .fb:hover {
     filter: grayscale(10%);
     opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
 }
 
 .git {
@@ -246,7 +247,7 @@ body, html {
 .git:hover {
     filter: grayscale(10%);
     opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
 }
 
 .email {
@@ -260,7 +261,7 @@ body, html {
 .email:hover {
     filter: grayscale(10%);
     opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .center {
@@ -280,6 +281,10 @@ body, html {
     
     .menu-subtitle {
         top: 15%;
+    }
+    
+    .resume {
+        width: 50vw;
     }
     
     .right-box {
