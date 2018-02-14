@@ -9,37 +9,11 @@
         <style>
             @import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave|Work+Sans');
         </style>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>
-        $(document).ready(function(){
-          // Add smooth scrolling to all links
-          $("a").on('click', function(event) {
-
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-              // Prevent default anchor click behavior
-              event.preventDefault();
-
-              // Store hash
-              var hash = this.hash;
-
-              // Using jQuery's animate() method to add smooth page scroll
-              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top
-              }, 800, function(){
-
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-              });
-            }
-          });
-        });
-        </script>
     </head>
  
 <body>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="scripts.js"></script>
     <div class="main-parallax" id="home">
         
         <div class="navbar">
@@ -71,7 +45,8 @@
     
     <div class="second-parallax">
         <div class="centre-box">
-            <div class="text-only-std">I'm a first year Computer Science and Business Administration undergrad at the University of Waterloo and Wilfrid Laurier University. This is the site where I'll write some blogs and portfolio of my projects. Please excuse the appearance for now as it's still a work in progress...
+            <img class="profile-pic" src="profile-pic.jpg" alt="Profile Picture">
+            <div class="text-only-std">I'm a first year Computer Science and Business Administration undergrad at the University of Waterloo and Wilfrid Laurier University. I'm into all kinds of coding and I'm always down to learn and make something new. I like to play badminton, tennis and I do some card magic on the side too. This is where I'll be keeping a resume, portfolio and probably also a blog so feel free to look around!
                 <div style="color: cornsilk; padding: 3vh;"></div>
             <a href="resume.pdf"><div class="resume">
                 Resume</div>
