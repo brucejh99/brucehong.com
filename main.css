@@ -318,6 +318,10 @@ body, html {
         font-size: 38px;
         text-align: center;
     }
+    
+    .section-title-std {
+    font-size: 30px;
+    }
 
     .date-std {
         font-family: sans-serif;
