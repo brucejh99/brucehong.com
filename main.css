@@ -1,182 +1,360 @@
 body, html {
-    height: 100vh;
+    height: 100%;
     transform: scale(1);
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
     max-width: 100%;
-    background: linear-gradient(#607393, #0c2d66);
-    background-attachment: fixed;
-}
-
-.splash-picture {
-    /* Image */
-    background-image: url(Images/splash%20page%20v2.png);
-
-    height: 25vh;
-    width: 80vw;
-    margin-left: 10vw;
-    background-attachment: scroll;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.logo {
-    height: 20vh;
-    position: relative;
-    display: block;
-    bottom: 0;
-    vertical-align: middle;
-    padding-top: 2vh;
-    padding-left: 1vw;
 }
 
 .navbar {
-    background: linear-gradient(black, #474747);
-    height: 5vh;
-    width: 80vw;
-    margin-left: 10vw;
-    justify-content: space-around;
-    display: flex;
+    background-color: rgba(94, 79, 75, 0.7);
+    height: 10vh;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
 }
 
 .navbar a:hover {
-    background: linear-gradient(#474747, #686868);
-    color: white;
+    background: cornsilk;
+    color: rgb(94, 79, 75);
 }
 
 .navigation {
-    height: 100%;
-    width: 20vw;
+    height: 100vh;
     cursor: pointer;
     background-color: rgba(150, 150, 150, 0);
     text-decoration: none;
-    line-height: 5vh;
+    color: cornsilk;
+    line-height: 10vh;
     vertical-align: middle;
-    margin: 0;
-    padding: auto;
+    padding-right: 5%;
+    padding-left: 5%;
     text-align: center;
     display: inline-block;
-    font-family: 'Nova Square', sans-serif;
-    font-style: bold;
-    font-size: 20px;
-    color: #c4c4c4;
-    border-left: solid;
-    border-right: solid;
-    border-color: #f2f2f2;
-    border-width: thin;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 32px;
 }
 
-.main-body {
-    background: #faf7ff;
+.title-section {
+    background-color: rgb(84, 79, 75);
     height: auto;
-    width: 80vw;
-    margin-left: 10vw;
-    position: absolute;
-}
-
-.info-header {
-    display: inline-block;
-    width: 15vw;
-    height: 2vw auto;
-    float: left;
-    padding: 1vw;
-    padding-top: 0.5vh;
-    padding-bottom: 0vh;
-    margin-left: 11vw;
-    margin-right: 1vw;
-    margin-top: 4vh;
-    margin-bottom: 0vh;
     text-align: center;
-    color: #c4c4c4;
-    font-size: 20px;
-    font-family: 'Nova Square', sans-serif;
-    background: linear-gradient(black, #474747);
+    margin-bottom: 0%;
+    margin-top: 0%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 
-.player-info {
-    float: left;
-    display: inline-block;
-    margin-left: 11vw;
-    margin-right: 1vw;
-    margin-bottom: 0vh;
-    margin-top: -0.5vh;
-    padding: 1vw;
-    background: #c4c4c4;
-    color: black;
-    width: 15vw;
-    height: 10vw;
-    font-size: 12px;
-}
+.main-parallax {
+    /* Image */
+    background-image: url('backgrounds/sea-to-sky-background.jpg');
 
-.chat-box {
-    float: left;
-    margin-left: 11vw;
-    margin-right: 1vw;
-    margin-bottom: 5vh;
-    margin-top: 0vh;
-    padding: 1vw;
-    padding-top: 1vw;
-    padding-bottom: 0;
-    background: #c4c4c4;
-    color: black;
-    width: 15vw;
-    height: 18.5vw;
-    font-size: 12px;
-}
+    /* Height */
+    height: 100%;
+    width: 100%;
 
-.map-name {
-    width: 40vw;
-    height: 2vw auto;
-    float: right;
-    padding-top: 0.5vh;
-    padding-bottom: 0.5vh;
-    margin-right: 11vw;
-    margin-top: 4vh;
-    margin-bottom: 0vh;
-    margin-left: 0vw;
-    text-align: center;
-    color: #c4c4c4;
-    font-size: 20px;
-    font-family: 'Nova Square', sans-serif;
-    background: linear-gradient(black, #474747);
-}
-
-#map {
-    float: right;
-    margin-right: 11vw;
-    margin-top: 0vh;
-    margin-bottom: 0vh;
-    margin-left: 0vw;
-    padding: 0vw;
-    width: 40vw;
-    height: 35vw;
-    background: url(Images/map%20filler.png);
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#player {
-    position: absolute;
-    background: url(player%20sprite.png) no-repeat;
-    height: 13.5px;
-    width: 13.5px;
-    border: 1px solid red;
+.second-parallax {
+    /* Image */
+    background-image: url('backgrounds/dc-background.jpg');
+
+    /* Height */
+    height: auto;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/*
-.party {
-    margin: 11vw;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-    height: 20vh;
-    background: grey;
-    display: inline-block;
-    width: 58vw;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+.third-parallax {
+    /* Image */
+    background-image: url('backgrounds/pier-background.jpg');
+
+    /* Height */
+    height: auto;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile-pic {
+    position: center;
+    height: 40vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 50%;
+    align-content: center;
+}
+
+.resume {
+    cursor: pointer;
+    background-color: cornsilk;
+    text-decoration: none;
+    color: rgb(94, 79, 75);
+    vertical-align: middle;
     text-align: center;
-}*/
+    padding-right: 2.5vw;
+    padding-left: 2.5vw;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 32px;
+    border-color: rgb(94, 79, 75);
+    border-style: solid;
+    border-width: thick;
+    display: inline-block;
+}
+
+.resume:hover {
+    color: cornsilk;
+    background: rgb(94, 79, 75);
+    opacity: 1;
+}
+
+.menu-title {
+    height: auto;
+    width: 100%;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 90px;
+    background: rgba(150, 150, 150, 0);
+    margin-top: 0%;
+    top: 20vh;
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.menu-subtitle {
+    height: auto;
+    width: 100%;
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 45px;
+    background: rgba(150, 150, 150, 0);
+    margin: 0%;
+    top: 20vh;
+    position: relative;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.menu-icons {
+    height: auto;
+    width: 200px;
+    font-family: sans-serif;
+    background: rgba(255, 255, 255, 0);
+    margin: 0%;
+    position: absolute;
+    text-align: left;
+    bottom: 10px;
+    left: 10px;
+}
+
+.section-title-std {
+    color: cornsilk;
+    background: hidden;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 60px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.centre-box {
+    width: auto;
+    font-family: sans-serif;
+    background: cornsilk;
+    opacity: 0.9;
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-left: 0%;
+    height: 100%;
+}
+
+.right-box {
+    width: auto;
+    font-family: sans-serif;
+    background: cornsilk;
+    opacity: 0.9;
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-left: 25vw;
+    height: 100%;
+}
+
+.page-title-std {
+    margin-top: 0;
+    padding-top: 5vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+.date-std {
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: right;
+    padding-right: 5%;
+    margin-bottom: 1%;
+}
+
+.text-std {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    margin-bottom: 5%;
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(94, 79, 75);
+}
+
+.text-only-std {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 3.5%;
+    padding-top: 2vh;
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(94, 79, 75);
+    border-top: solid;
+    border-color: rgb(94, 79, 75);
+}
+
+.fb {
+    opacity: 0.4;
+    height: 55px;
+    width: 55px;
+    margin: 0 auto;
+    filter: grayscale(100%);
+}
+
+.fb:hover {
+    filter: grayscale(10%);
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.git {
+    opacity: 0.4;
+    height: 55px;
+    width: 55px;
+    margin: 0 auto;
+    filter: grayscale(100%);
+}
+
+.git:hover {
+    filter: grayscale(10%);
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.email {
+    opacity: 0.4;
+    height: 55px;
+    width: 55px;
+    margin: 0 auto;
+    filter: grayscale(100%);
+}
+
+.email:hover {
+    filter: grayscale(10%);
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.center {
+    margin: auto;
+    width: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+    
+    .navigation {
+        font-size: 28px;
+    }
+    
+    .menu-title {
+        top: 20%;
+    }
+    
+    .menu-subtitle {
+        top: 15%;
+    }
+    
+    .resume {
+        width: 50vw;
+    }
+    
+    .right-box {
+        height: auto;
+        width: auto;
+        margin-top: 0%;
+        margin-right: 0%;
+        margin-left: 0vw;
+        padding-bottom: 10px;
+    }
+
+    .page-title-std {
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-family: sans-serif;
+        font-size: 38px;
+        text-align: center;
+    }
+    
+    .section-title-std {
+    font-size: 30px;
+    }
+
+    .date-std {
+        font-family: sans-serif;
+        font-size: 18px;
+        text-align: right;
+        padding-right: 5%;
+    }
+
+    .text-std {
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 2%;
+        padding-bottom: 7%;
+        font-family: sans-serif;
+        font-size: 26px;
+        text-align: center;
+    }
+    
+    .second-parallax {
+        height: auto;
+        width: auto;
+    }
+
+    .third-parallax {
+        height: auto;
+        width: auto;
+    }
+}
