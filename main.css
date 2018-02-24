@@ -400,4 +400,22 @@ body, html {
         height: auto;
         width: auto;
     }
+    .portfolio-column {
+        width: 90vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    
+    .portfolio-row {
+        width: 100w;
+        padding: 0;
+    }
+
+    .portfolio-image {
+        height: 80vw;
+        width: 80vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-bottom: 5vh;
+    }
 }
