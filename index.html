@@ -11,93 +11,46 @@
         </style>
     </head>
  
-    <!-- Revamp notes -->
-    <!-- New color theme: #dd0000 (red) + #666666 (grey) + white -->
-    <!-- Edit parallax background to match color theme + sticky navbar with offset scroll animation -->
 <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="scripts.js"></script>
     
-    <div class="main-parallax" id="home">
-        
-        <!-- remove blog and add work section -->
-        <div class="navbar" id="navbar">
-            <a class="navigation" href="#home">Home</a>
-            <a class="navigation" href="#intro">About</a>
-            <a class="navigation" href="#projects">Projects</a>
-            <a class="navigation" href="#blog-title">Blog</a>
-        </div>
-        
-        <h1 class="menu-title">Hi, I'm Bruce.</h1>
-        <h2 class="menu-subtitle" style="color:cornsilk">Welcome to my site!</h2>
-        
-        <h1 class="menu-icons">
-        <div class="center">
-        <a href="https://www.facebook.com/xev.amadore.5">
-            <img class="fb" src="logos/facebook-logo.png" align="center" alt="Facebook"></a>
-    
-        <a href="https://github.com/brucejh99">
-            <img class="git" src="logos/github-logo.png" align="center" alt="Github"></a>
-            
-        <a href="mailto:bjhong@yahoo.com">
-            <img class="email" src="logos/email-logo.png" align="center" alt="Email"></a>
-        </div>
-        </h1>
+    <div class="navbar" id="navbar">
+        <a class="navigation" href="#home">Home</a>
+        <a class="navigation" href="#about">About</a>
+        <a class="navigation" href="#projects">Projects</a>
+        <a class="navigation" href="#work">Experience</a>
     </div>
     
-    <div class="title-section" id="intro">
-        <p class="section-title-std">Who am I?</p>
+    <div class="main-parallax">
+    
+    <div style="height: 0vh;" id="home"></div>
+
+    <h1 class="menu-intro">Hi, my name is</h1>
+    <h1 class="menu-name">Bruce</h1>
+
+    <h1 class="menu-icons">
+    <div class="center">
+    <a href="https://www.facebook.com/xev.amadore.5">
+        <img class="contact-icon" src="logos/facebook-logo.png" align="center" alt="Facebook"></a>
+
+    <a href="https://github.com/brucejh99">
+        <img class="contact-icon" src="logos/github-logo.png" align="center" alt="Github"></a>
+
+    <a href="mailto:bjhong@yahoo.com">
+        <img class="contact-icon" src="logos/email-logo.png" align="center" alt="Email"></a>
+    </div>
+    </h1>
+
+    <div class="text" id="about">
+        <img class="profile-pic" src="profile-pic.jpg">
+        <p>I'm a first year Computer Science and Business Administration undergrad at the University of Waterloo and Wilfrid Laurier University. I'm about to start my first co-op term at Finastra as a Software Developer. On the side, I like to play badminton, tennis and I do some card magic too. If you want to get in touch, you can contact me with any of the social media links on the site.</p>
     </div>
     
-    <div class="second-parallax">
-        <div style="height: 15vh; width: 100vw;"></div>
-        <div class="centre-box">
-            <img class="profile-pic" src="profile-pic.jpg" alt="Profile Picture">
-            <div class="text-only-std">I'm a first year Computer Science and Business Administration undergrad at the University of Waterloo and Wilfrid Laurier University. I'm into all kinds of projects and I'm always down to learn and make something new. On the side, I like to play badminton, tennis and I do some card magic too. This is where I'll be keeping a resume, portfolio and probably also a blog so feel free to look around!
-                <div style="color: cornsilk; padding: 1vh;"></div>
-            <a href="resume.pdf"><div class="resume">Résumé</div></a>
-            </div>
-        </div>
-            <div style="height: 15vh;"></div>
-            
-        <div style="background-color: cornsilk">
-            <div class="title-section" id="projects">
-                <div class="section-title-std">Projects</div>
-            </div>
-                <div class="text-only-std" style="font-size: 50px; padding-top: 5vh; padding-bottom: 0px;">Ongoing Projects:</div>
-            
-                <div class="portfolio-row">
-                    <div class="portfolio-column">
-                        <p class="portfolio-title">Pokemon Harvold</p>
-                        <p class="portfolio-description">A browser-based multiplayer Pokemon game Game mechanics are based on first generation Pokmeon games in development with HTML/CSS and JavaScript. Future updates will use NodeJS, jQuery, socket.io and SQL.</p>
-                        <a href="https://github.com/brucejh99/Project-Harvold"><img class="portfolio-image" src="project-images/pokemon-harvold.png" align="center" alt="Pokemon Harvold"></a>
-                    </div>
-                    <div class="portfolio-column">
-                        <p class="portfolio-title">Zombie Shooter Game</p>
-                        <p class="portfolio-description">A browser-based multiplayer zombie survival game with buildable and destructible terrain. Currently in development with HTML/CSS, NodeJS, socket.io, Express and PhaserJS physics engine. Current version available <a href="http://multiplayergametest-webgametest.1d35.starter-us-east-1.openshiftapps.com/" style="color: rgb(84, 79, 75); text-decoration: underline;"><strong>here</strong></a>.</p>
-                        <a href="https://github.com/jasonliu19/MultiplayerBrowserGame"><img class="portfolio-image" src="project-images/zombie-game.png" align="center" alt="Zombie Game"></a>
-                    </div>
-                    <div class="portfolio-column">
-                        <p class="portfolio-title">Minigames App</p>
-                        <p class="portfolio-description">An Android single-device app made up of a suite of classic and spinoffs of classic minigames for those times when you get bored but can't get too invested in a game. Currently in development with Java using Android Studio.</p>
-                        <a href="https://github.com/brucejh99/Minigames"><img class="portfolio-image" src="project-images/minigame-app.png" align="center" alt="Minigame App"></a>
-                    </div>
-                </div>
-                <!-- Next row of projects goes here with new portfolio-row class -->
-            </div>
-        </div>
-    
-    <div class="title-section" id="blog-title">
-        <p class="section-title-std">Blog</p>
+    <div class="text" id="projects">
+    <h1 class="section-title">Projects:</h1>
     </div>
 
-    <!-- cut out-->
-    <div class="third-parallax">
-    <div class="right-box" style="font-family:sans-serif; background:rgba(150, 150, 150, 0.8)">
-        <div class="page-title-std" style="color: white">Introducing...My Project</div>
-        <div class="date-std" style="color: white">Jan. 22, 2018</div>
-        <div class="text-std" style="color: white; font-size: 22px;">As of writing, I just launched the basic layout of the site you see now last night. Since I'm actually hosting the site now, it felt a little weird to just leave it blank. I picked up HTML/CSS 3 days ago so hopefully by the time you read this, my site looks a bit more presentable than what I'm looking at now. This is probably going to end up as a blogging site where I write about hobbies and projects that I'm working on with a professional section on the side. Originally, this was going to be project for the summer but scrolling through some sites to learn HTML led to some experimentation which turned into something of a weekend addiction. So here I am. Now, I've never written a blog till now so I hope you'll stick around to see where this site goes!</div></div>
     </div>
-
 </body>
 </html>

@@ -1,14 +1,32 @@
 body, html {
-    height: 100%;
+    height: 100%
     transform: scale(1);
     margin: 0;
     max-width: 100vw;
 }
 
+.main-parallax { 
+    /* The image used */
+    background-image: url(backgrounds/temp.jpg);
+
+    /* Set a specific height */
+    height: auto; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -10vh;
+}
+
 .navbar {
-    background-color: rgba(94, 79, 75, 0.7);
+    background-color: #666666;
+    border-bottom-style: solid;
+    border-width: 0.5vh;
+    border-bottom-color: #dd0000;
     height: 10vh;
-    width: 100vw;
+    width: 100%;
     position: sticky;
     top: 0;
     overflow: hidden;
@@ -16,53 +34,47 @@ body, html {
 }
 
 .navbar a:hover {
-    background: cornsilk;
-    color: rgb(94, 79, 75);
+    background: #dd0000;
+    color: white;
 }
 
 .navigation {
-    height: 100vh;
+    height: 10vh;
     cursor: pointer;
-    background-color: rgba(150, 150, 150, 0);
+    background-color: #666666;
     text-decoration: none;
-    color: cornsilk;
+    color: white;
     line-height: 10vh;
     vertical-align: middle;
-    padding-right: 5%;
-    padding-left: 5%;
+    padding-right: 5vw;
+    padding-left: 5vw;
     text-align: center;
     display: inline-block;
     font-family: 'Work Sans', sans-serif;
     font-size: 38px;
+    justify-content: space-around;
+    border-left: thin;
+    border-right: thin;
 }
 
-.menu-title {
+.menu-intro {
+    width: 100%;
     height: auto;
-    width: 100vw;
     font-family: 'Work Sans', sans-serif;
-    font-size: 90px;
-    background: rgba(150, 150, 150, 0);
-    margin-top: 0%;
-    top: 20vh;
-    position: relative;
+    font-size: 80px;
+    padding-top: 22vh;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: rgb(94, 79, 75);
+    color: #666666;
 }
 
-.menu-subtitle {
-    height: auto;
-    width: 100vw;
-    font-family: 'Sedgwick Ave', cursive;
-    font-size: 45px;
-    background: rgba(150, 150, 150, 0);
-    margin: 0%;
-    top: 20vh;
-    position: relative;
+.menu-name {
+    width: 100%;
+    line-height: 0px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 100px;
+    padding-bottom: 40vh;
     text-align: center;
-    padding-top: 5px;
-    padding-bottom: 20px;
+    color: #dd0000;
 }
 
 .menu-icons {
@@ -77,108 +89,74 @@ body, html {
     left: 10px;
 }
 
-.section-title-std {
-    color: cornsilk;
-    background: hidden;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    padding-top: 0%;
-    padding-bottom: 0%;
-    vertical-align: middle;
-    display: inline-block;
-    font-size: 60px;
-    font-family: 'Work Sans', sans-serif;
-}
-
-.title-section {
-    background-color: rgb(84, 79, 75);
-    height: auto;
-    width: 100vw;
-    text-align: center;
-    margin: 0;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    padding-right: 0;
-    padding-left: 0;
-}
-
-.main-parallax {
-    /* Image */
-    background-image: url('backgrounds/sea-to-sky-background.jpg');
-
-    /* Height */
-    height: 100vh;
-    width: 100vw;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.second-parallax {
-    /* Image */
-    background-image: url('backgrounds/dc-background.jpg');
-
-    /* Height */
-    height: auto;
-    width: 100vw;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.third-parallax {
-    /* Image */
-    background-image: url('backgrounds/pier-background.jpg');
-
-    height: auto;
-    width: 100vw;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .profile-pic {
     position: center;
-    height: 30vh;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    height: 40vh;
     margin-left: auto;
     margin-right: auto;
-    display: block;
     border-radius: 50%;
-    align-content: center;
+    margin-top: 6.6vh;
 }
 
 .resume {
     cursor: pointer;
-    background-color: cornsilk;
+    background-color: white;
     text-decoration: none;
-    color: rgb(94, 79, 75);
+    color: #dd0000;
     vertical-align: middle;
     text-align: center;
     padding-right: 2.5vw;
     padding-left: 2.5vw;
     font-family: 'Work Sans', sans-serif;
     font-size: 32px;
-    border-color: rgb(94, 79, 75);
+    border-color: #666666;
     border-style: solid;
     border-width: medium;
     display: inline-block;
 }
 
 .resume:hover {
-    color: cornsilk;
-    background: rgb(94, 79, 75);
+    color: white;
+    background: #666666;
     opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.contact-icon {
+    opacity: 0.4;
+    height: 55px;
+    width: 55px;
+    margin: 0 auto;
+    filter: grayscale(100);
+}
+
+.contact-icon:hover {
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+    filter: grayscale(0);
+}
+
+.text {
+    background-color: #666666;
+    color: white;
+    width: 60vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 2vh;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+}
+
+.section-title {
+    background-color: #666666;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    color: white;
+    font-size: 40px;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .portfolio-row {
@@ -186,7 +164,6 @@ body, html {
     width: 91vw;
     padding-bottom: 5vh;
     padding-left: 4.5vw;
-    overflow-x: hidden;
 }
 
 .portfolio-column {
@@ -203,14 +180,14 @@ body, html {
     font-size: 30px;
     font-style: bold;
     text-align: center;
-    color: rgb(94, 79, 75);
+    color: white;
 }
 
 .portfolio-description {
     font-family: sans-serif;
     font-size: 20px;
     text-align: center;
-    color: rgb(94, 79, 75);
+    color: white;
     padding-top: 0;
     margin-top: 0;
     display: inline-block;
@@ -222,119 +199,6 @@ body, html {
     opacity: 1;
 }
 
-.centre-box {
-    width: auto;
-    font-family: sans-serif;
-    background: cornsilk;
-    opacity: 0.9;
-    margin-top: 0%;
-    margin-right: 0%;
-    margin-left: 0%;
-    height: auto;
-}
-
-.right-box {
-    width: auto;
-    height: 100%;
-    font-family: sans-serif;
-    background: cornsilk;
-    opacity: 0.9;
-    margin-top: 0%;
-    margin-right: 0%;
-    margin-left: 25vw;
-}
-
-.page-title-std {
-    margin-top: 0;
-    padding-top: 5vh;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    font-family: sans-serif;
-    font-size: 36px;
-    text-align: center;
-}
-
-.date-std {
-    font-family: sans-serif;
-    font-size: 18px;
-    text-align: right;
-    padding-right: 5vw;
-    margin-bottom: 1%;
-}
-
-.text-std {
-    width: auto;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-bottom: 0%;
-    padding-top: 0%;
-    margin-bottom: 5vw;
-    font-family: sans-serif;
-    font-size: 30px;
-    text-align: center;
-    color: rgb(94, 79, 75);
-}
-
-.text-only-std {
-    width: auto;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    padding-bottom: 3.5vh;
-    padding-top: 2vh;
-    font-family: sans-serif;
-    font-size: 25px;
-    text-align: center;
-    color: rgb(94, 79, 75);
-    border-top: solid;
-    border-color: rgb(94, 79, 75);
-}
-
-.fb {
-    opacity: 0.4;
-    height: 55px;
-    width: 55px;
-    margin: 0 auto;
-    filter: grayscale(100%);
-}
-
-.fb:hover {
-    filter: grayscale(10%);
-    opacity: 1;
-    transition: opacity 0.4s ease-in-out;
-}
-
-.git {
-    opacity: 0.4;
-    height: 55px;
-    width: 55px;
-    margin: 0 auto;
-    filter: grayscale(100%);
-}
-
-.git:hover {
-    filter: grayscale(10%);
-    opacity: 1;
-    transition: opacity 0.4s ease-in-out;
-}
-
-.email {
-    opacity: 0.4;
-    height: 55px;
-    width: 55px;
-    margin: 0 auto;
-    filter: grayscale(100%);
-}
-
-.email:hover {
-    filter: grayscale(10%);
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.center {
-    margin: auto;
-    width: 100%;
-}
 
 @media only screen and (max-width: 750px) {
     
@@ -353,55 +217,7 @@ body, html {
     .resume {
         width: 50vw;
     }
-    
-    .right-box {
-        height: auto;
-        width: auto;
-        margin-top: 0%;
-        margin-right: 0%;
-        margin-left: 0vw;
-        padding-bottom: 10px;
-    }
 
-    .page-title-std {
-        padding-top: 5%;
-        padding-left: 5%;
-        padding-right: 5%;
-        font-family: sans-serif;
-        font-size: 38px;
-        text-align: center;
-    }
-    
-    .section-title-std {
-    font-size: 30px;
-    }
-
-    .date-std {
-        font-family: sans-serif;
-        font-size: 18px;
-        text-align: right;
-        padding-right: 5%;
-    }
-
-    .text-std {
-        padding-left: 10%;
-        padding-right: 10%;
-        padding-top: 2%;
-        padding-bottom: 7%;
-        font-family: sans-serif;
-        font-size: 26px;
-        text-align: center;
-    }
-    
-    .second-parallax {
-        height: auto;
-        width: auto;
-    }
-
-    .third-parallax {
-        height: auto;
-        width: auto;
-    }
     .portfolio-column {
         width: 90vw;
         padding-left: 5vw;
@@ -421,7 +237,7 @@ body, html {
         padding-bottom: 5vh;
     }
     
-    .menu-icons {
+    .contact-icon {
         bottom: 1vh;
         left: 1vw;
     }
