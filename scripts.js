@@ -18,9 +18,56 @@ $(document).ready(function(){
                 scrollTop: $(hash).offset().top - (0.1 * vh)
               }, 1000, function(){
 
-                // Add hash (#) to URL when done scrolling (default click behavior)
-
+                // Add hash (#) to URL when done scrolling (default click behavior) - breaks when added
               });
             }
           });
         });
+
+$(document).ready(function() {
+  $(window).scroll(function() {
+    var scrollPos = $(window).scrollTop();
+    
+    var page1Top = $("#home").offset().top;
+    var page2Top = $("#about").offset().top;
+    var page3Top = $("#projects").offset().top;
+    var page4Top = $("#work").offset().top;
+
+    if (scrollPos >= page1Top - 0.11 * vh && scrollPos < page2Top - 0.11 * vh) {
+      $("#home-button").addClass("active");
+      $("#about-button").removeClass("active");
+      $("#project-button").removeClass("active");
+      $("#work-button").removeClass("active");
+    } else {
+      $("#home-button").removeClass("active");
+    }
+
+    if (scrollPos >= page2Top - 0.11 * vh && scrollPos < page3Top - 0.11 * vh) {
+      $("#about-button").addClass("active");
+      $("#home-button").removeClass("active");
+      $("#project-button").removeClass("active");
+      $("#work-button").removeClass("active");
+    } else {
+      $("#about-button").removeClass("active");
+    }
+    
+    if (scrollPos >= page3Top - 0.11 * vh && scrollPos < page4Top - 0.11 * vh) {
+      $("#project-button").addClass("active");
+      $("#home-button").removeClass("active");
+      $("#about-button").removeClass("active");
+      $("#work-button").removeClass("active");
+    } else {
+      $("#project-button").removeClass("active");
+    }
+      
+    if (scrollPos >= page4Top - 0.11 * vh) {
+      $("#work-button").addClass("active");
+      $("#home-button").removeClass("active");
+      $("#about-button").removeClass("active");
+      $("#project-button").removeClass("active");
+    } else {
+      $("#work-button").removeClass("active");
+    }
+
+  });
+});

@@ -16,10 +16,7 @@
     <script src="scripts.js"></script>
     
     <div class="navbar" id="navbar">
-        <a class="navigation" href="#home">Home</a>
-        <a class="navigation" href="#about">About</a>
-        <a class="navigation" href="#projects">Projects</a>
-        <a class="navigation" href="#work">Experience</a>
+        <a class="navigation" href="#home" id="home-button">Home</a><a class="navigation" href="#about" id="about-button">About</a><a class="navigation" href="#projects" id="project-button">Projects</a><a class="navigation" href="#work" id="work-button">Experience</a>
     </div>
     
     <div class="main-parallax">
@@ -31,27 +28,65 @@
         <h1 class="menu-name">Bruce</h1>
 
         <div class="menu-icons">
-        <div class="center">
-        <a href="https://www.facebook.com/xev.amadore.5">
-            <img class="contact-icon" src="logos/facebook-logo.png" align="center" alt="Facebook"></a>
+            <div class="center">
+                <a href="https://www.facebook.com/xev.amadore.5">
+                    <img class="contact-icon" src="logos/facebook-logo.png" align="center" alt="Facebook"></a>
 
-        <a href="https://github.com/brucejh99">
-            <img class="contact-icon" src="logos/github-logo.png" align="center" alt="Github"></a>
+                <a href="https://github.com/brucejh99">
+                    <img class="contact-icon" src="logos/github-logo.png" align="center" alt="Github"></a>
 
-        <a href="mailto:bjhong@yahoo.com">
-            <img class="contact-icon" src="logos/email-logo.png" align="center" alt="Email"></a>
-        </div>
+                <a href="mailto:bjhong@yahoo.com">
+                    <img class="contact-icon" src="logos/email-logo.png" align="center" alt="Email"></a>
+            </div>
         </div>
 
         <div class="text" id="about">
             <img class="profile-pic" src="profile-pic.jpg">
             <p>I'm a first year Computer Science and Business Administration undergrad at the University of Waterloo and Wilfrid Laurier University. I'm about to start my first co-op term at Finastra as a Software Developer. On the side, I like to play badminton, tennis and I do some card magic too. If you want to get in touch, you can contact me with any of the social media links on the site.</p>
+             <a href="resume.pdf"><div class="resume">Résumé</div></a>
         </div>
 
         <div class="text" id="projects">
-        <h1 class="section-title">Projects:</h1>
+            <h1 class="section-title">Ongoing Projects:</h1>
+            
+            <div class="portfolio-row">
+                <div class="portfolio-column">
+                    <h1 class="portfolio-title">Pokémon Harvold</h1>
+                    <p class="portfolio-description">A browser-based multiplayer Pokemon game Game mechanics are based on first generation Pokmeon games in development with HTML/CSS and JavaScript. Future updates will use NodeJS, jQuery, socket.io and SQL.</p>
+                    <a href="https://github.com/brucejh99/Project-Harvold"><img src="project-images/pokemon-harvold.png" class="portfolio-image"></a>
+                </div>
+                <div class="portfolio-column">
+                <h1 class="portfolio-title">Zombie Survival</h1>
+                <p class="portfolio-description">A browser-based multiplayer zombie survival game with buildable and destructible terrain. In development with HTML/CSS, NodeJS, socket.io, Express and PhaserJS physics engine. Current version available <a href="http://multiplayergametest-webgametest.1d35.starter-us-east-1.openshiftapps.com/" style="color: #dd0000; text-decoration: underline;"><strong>here</strong></a>.</p>
+                <a href="https://github.com/jasonliu19/MultiplayerBrowserGame"><img src="project-images/zombie-game.png" class="portfolio-image"></a>
+                </div>
+                <div class="portfolio-column">
+                    <h1 class="portfolio-title">Minigames App</h1>
+                    <p class="portfolio-description">An Android single-device app made up of a suite of classic and spinoffs of classic minigames for those times when you get bored but can't get too invested in a game. Currently in development in Java using Android Studio.</p>
+                    <a href="https://github.com/brucejh99/Minigames"><img src="project-images/minigame-app.png" class="portfolio-image"></a>
+                </div>
+            </div>
+            
+            <h1 class="section-title">Past Projects:</h1>
+            
+            <div class="portfolio-row">
+                <div class="portfolio-column">
+                    <h1 class="portfolio-title">Pink Box Apocalypse</h1>
+                    <p class="portfolio-description">A virtual reality survival game where players use grenades and slingshot explosives to survive waves of pink boxes using hand gestures. Developed for Oculus Rift in C# using Unity game engine and Leap Motion.</p>
+                    <a href="https://github.com/jasonliu19/Starterhacks"><img src="project-images/pink-box-apocalypse.jpg" class="portfolio-image"></a>
+                </div>
+            </div>
         </div>
-
+        
+        <div class="work-box" id="work">
+            <img src="work/BR.jpg" class="work-logo">
+            <p class="work-text">Bubble Republic - Bartender</p>
+        </div>
+        
+        <div class="work-box" id="work">
+            <img src="work/BR.jpg" class="work-logo" style="margin-bottom: 0;">
+        </div>
+    
     </div>
     
 </body>

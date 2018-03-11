@@ -54,8 +54,10 @@ body, html {
     font-family: 'Work Sans', sans-serif;
     font-size: 38px;
     justify-content: space-around;
-    border-left: thin;
-    border-right: thin;
+}
+
+.active {
+    background: #dd0000;
 }
 
 .menu-intro {
@@ -80,11 +82,13 @@ body, html {
 
 .menu-icons {
     height: auto;
-    width: 98vw;
+    width: 20vw;
     font-family: sans-serif;
     background: rgba(255, 255, 255, 0);
     padding-top: 2vh;
     padding-bottom: 2vh;
+    padding-left: 1vw;
+    max-width: 100%;
     display: block;
 }
 
@@ -99,26 +103,25 @@ body, html {
 
 .resume {
     cursor: pointer;
-    background-color: white;
+    background-color: #666666;
     text-decoration: none;
-    color: #dd0000;
+    color: white;
     vertical-align: middle;
     text-align: center;
     padding-right: 2.5vw;
     padding-left: 2.5vw;
     font-family: 'Work Sans', sans-serif;
     font-size: 32px;
-    border-color: #666666;
+    border-color: white;
     border-style: solid;
     border-width: medium;
     display: inline-block;
 }
 
 .resume:hover {
-    color: white;
+    color: #dd0000;
     background: #666666;
-    opacity: 1;
-    transition: opacity 0.4s ease-in-out;
+    border-color: #dd0000
 }
 
 .contact-icon {
@@ -137,9 +140,9 @@ body, html {
 .text {
     background-color: #666666;
     color: white;
-    width: 60vw;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    width: 70vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
     padding-left: 10vw;
     padding-right: 10vw;
     padding-bottom: 2vh;
@@ -152,7 +155,6 @@ body, html {
 .section-title {
     background-color: #666666;
     padding-top: 5vh;
-    padding-bottom: 5vh;
     color: white;
     font-size: 40px;
     font-family: 'Work Sans', sans-serif;
@@ -160,13 +162,12 @@ body, html {
 
 .portfolio-row {
     height: auto;
-    width: 91vw;
+    width: 70vw;
     padding-bottom: 5vh;
-    padding-left: 4.5vw;
 }
 
 .portfolio-column {
-    width: 28vw;
+    width: 20vw;
     padding-left: 1vw;
     padding-right: 1vw;
     padding-bottom: 0vh;
@@ -193,9 +194,46 @@ body, html {
 }
 
 .portfolio-image {
-    height: 28vw;
-    width: 28vw;
+    height: 20vw;
+    width: 20vw;
     opacity: 1;
+}
+
+.work-box {
+    background-color: white;
+    color: #666666;
+    width: 70vw;
+    height: 20vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 5vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 2vh;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+    border: solid;
+    border-width: 1vh;
+    border-color: #dd0000;
+    border-radius: 65vw;
+}
+
+.work-logo {
+    height: 15vh;
+    padding-top: 3.5vh;
+    padding-bottom: 3.5vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    display: inline-block;
+    float: left;
+}
+
+.work-text {
+    font-family: 'Work Sans', sans-serif;
+    display: inline-block;
+    font-size: 50px;
+    padding-top: 1vh;
 }
 
 
