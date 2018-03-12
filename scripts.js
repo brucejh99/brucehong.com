@@ -1,4 +1,8 @@
 var vh = $( window ).height();
+var pink = false;
+var blue = false;
+var yellow = false;
+var orange = false;
 
 $(document).ready(function(){
           // Add smooth scrolling to all links
@@ -34,40 +38,74 @@ $(document).ready(function() {
     var page4Top = $("#work").offset().top;
 
     if (scrollPos >= page1Top - 0.11 * vh && scrollPos < page2Top - 0.11 * vh) {
-      $("#home-button").addClass("active");
-      $("#about-button").removeClass("active");
-      $("#project-button").removeClass("active");
-      $("#work-button").removeClass("active");
+      $("#home-button").addClass("active-pink");
+      $("#about-button").removeClass("active-blue");
+      $("#project-button").removeClass("active-yellow");
+      $("#work-button").removeClass("active-orange");
+        pink = true;
     } else {
-      $("#home-button").removeClass("active");
+      $("#home-button").removeClass("active-pink");
+        pink = false;
     }
 
     if (scrollPos >= page2Top - 0.11 * vh && scrollPos < page3Top - 0.11 * vh) {
-      $("#about-button").addClass("active");
-      $("#home-button").removeClass("active");
-      $("#project-button").removeClass("active");
-      $("#work-button").removeClass("active");
+      $("#about-button").addClass("active-blue");
+      $("#home-button").removeClass("active-pink");
+      $("#project-button").removeClass("active-yellow");
+      $("#work-button").removeClass("active-orange");
+        blue = true;
     } else {
-      $("#about-button").removeClass("active");
+      $("#about-button").removeClass("active-blue");
+        blue = false;
     }
     
     if (scrollPos >= page3Top - 0.11 * vh && scrollPos < page4Top - 0.11 * vh) {
-      $("#project-button").addClass("active");
-      $("#home-button").removeClass("active");
-      $("#about-button").removeClass("active");
-      $("#work-button").removeClass("active");
+      $("#project-button").addClass("active-yellow");
+      $("#home-button").removeClass("active-pink");
+      $("#about-button").removeClass("active-blue");
+      $("#work-button").removeClass("active-orange");
+        yellow = true;
     } else {
-      $("#project-button").removeClass("active");
+      $("#project-button").removeClass("active-yellow");
+        yellow = false;
     }
       
     if (scrollPos >= page4Top - 0.11 * vh) {
-      $("#work-button").addClass("active");
-      $("#home-button").removeClass("active");
-      $("#about-button").removeClass("active");
-      $("#project-button").removeClass("active");
+      $("#work-button").addClass("active-orange");
+      $("#home-button").removeClass("active-pink");
+      $("#about-button").removeClass("active-blue");
+      $("#project-button").removeClass("active-yellow");
+        orange = true;
     } else {
-      $("#work-button").removeClass("active");
+      $("#work-button").removeClass("active-orange");
+        orange = false;
     }
-
   });
+});
+
+$(document).ready(function(){
+    $("#home-button").hover(function(){
+        $(this).addClass("active-pink");
+        }, function(){
+        if(!pink)
+        $(this).removeClass("active-pink");
+    });
+    $("#about-button").hover(function(){
+        $(this).addClass("active-blue");
+        }, function(){
+        if(!blue)
+        $(this).removeClass("active-blue");
+    });
+    $("#project-button").hover(function(){
+        $(this).addClass("active-yellow");
+        }, function(){
+        if(!yellow)
+        $(this).removeClass("active-yellow");
+    });
+    $("#work-button").hover(function(){
+        $(this).addClass("active-orange");
+        }, function(){
+        if(!orange)
+        $(this).removeClass("active-orange");
+    });
 });
