@@ -36,6 +36,7 @@ $(document).ready(function() {
     var page2Top = $("#about").offset().top;
     var page3Top = $("#projects").offset().top;
     var page4Top = $("#work").offset().top;
+    var page5Top = $("#end").offset().top;
 
     if (scrollPos >= page1Top - 0.11 * vh && scrollPos < page2Top - 0.11 * vh) {
       $("#home-button").addClass("active-pink");
@@ -70,7 +71,7 @@ $(document).ready(function() {
         yellow = false;
     }
       
-    if (scrollPos >= page4Top - 0.11 * vh) {
+    if (scrollPos >= page4Top - 0.11 * vh && scrollPos < page5Top - 0.11 * vh) {
       $("#work-button").addClass("active-orange");
       $("#home-button").removeClass("active-pink");
       $("#about-button").removeClass("active-blue");
