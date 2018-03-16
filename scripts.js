@@ -4,6 +4,7 @@ var blue = false;
 var yellow = false;
 var orange = false;
 
+
 $(document).ready(function(){
           // Add smooth scrolling to all links
           $("a").on('click', function(event) {
@@ -27,6 +28,7 @@ $(document).ready(function(){
             }
           });
         });
+
 
 $(document).ready(function() {
   $(window).scroll(function() {
@@ -83,6 +85,7 @@ $(document).ready(function() {
     }
   });
 });
+
 
 $(document).ready(function(){
     $("#home-button").hover(function(){
