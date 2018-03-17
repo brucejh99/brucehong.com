@@ -7,7 +7,7 @@ body, html {
 
 .main-parallax { 
     background: url(backgrounds/test-background.png);
-    height: auto; 
+    height: auto;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -247,7 +247,7 @@ body, html {
 }
 
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1000px) {
     
     .navigation {
         font-size: 28px;
@@ -266,19 +266,23 @@ body, html {
     }
 
     .portfolio-column {
-        width: 90vw;
+        width: 60vw;
         padding-left: 5vw;
         padding-right: 5vw;
     }
     
+    .text {
+        width: 80vw;
+    }
+    
     .portfolio-row {
-        width: 100w;
+        width: 80vw;
         padding: 0;
     }
 
     .portfolio-image {
-        height: 80vw;
-        width: 80vw;
+        height: 40vw;
+        width: 40vw;
         padding-left: 5vw;
         padding-right: 5vw;
         padding-bottom: 5vh;
@@ -287,5 +291,9 @@ body, html {
     .contact-icon {
         bottom: 1vh;
         left: 1vw;
+    }
+    
+    .work-text {
+        font-size: 30px;
     }
 }
