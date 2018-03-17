@@ -202,13 +202,12 @@ body, html {
     background-color: white;
     color: black;
     width: 70vw;
-    height: 20vh;
+    height: auto;
     margin-left: 5vw;
     margin-right: 5vw;
     margin-top: 5vh;
     padding-left: 10vw;
     padding-right: 10vw;
-    padding-bottom: 2vh;
     text-align: center;
     font-family: 'Work Sans', sans-serif;
     font-size: 30px;
@@ -220,19 +219,19 @@ body, html {
 
 .work-logo {
     height: 15vh;
-    padding-top: 3.5vh;
-    padding-bottom: 3.5vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
     padding-left: 2vw;
     padding-right: 2vw;
-    display: inline-block;
     float: left;
 }
 
 .work-text {
     font-family: 'Work Sans', sans-serif;
     display: inline-block;
-    font-size: 50px;
-    padding-top: 1vh;
+    font-size: 40px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 
 .end {
