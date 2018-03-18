@@ -13,7 +13,6 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: -10vh;
-    padding-bottom: 5vh;
 }
 
 .navbar {
@@ -65,7 +64,7 @@ body, html {
     height: auto;
     font-family: 'Work Sans', sans-serif;
     font-size: 80px;
-    padding-top: 20vh;
+    padding-top: 25vh;
     text-align: center;
     color: black;
 }
@@ -75,7 +74,7 @@ body, html {
     line-height: 0;
     font-family: 'Work Sans', sans-serif;
     font-size: 100px;
-    padding-bottom: 30vh;
+    padding-bottom: 25vh;
     text-align: center;
     color: #EC576B;
 }
@@ -235,14 +234,14 @@ body, html {
 }
 
 .end {
-    height: 50vh;
     width: 100vw;
     max-width: 100%;
     background: rgba(0, 0, 0, 0);
     font-family: 'Work Sans', sans-serif;
     text-align: center;
     font-size: 100px;
-    padding-top: 40vh;
+    padding-top: 50vh;
+    padding-bottom: 40vh;
 }
 
 
