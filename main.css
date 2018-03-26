@@ -293,5 +293,13 @@ body, html {
     
     .work-text {
         font-size: 30px;
+        float: none;
+    }
+    
+    .work-logo {
+        float: none;
+        margin-top: 5vh;
+        margin-left: 30vw;
+        margin-right: 30vw;
     }
 }
