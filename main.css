@@ -175,6 +175,11 @@ div.background {
     display: inline-block;
 }
 
+.project-box {
+    height: 20vw;
+    width: 20vw;
+}
+
 .project-image {
     height: 20vw;
     width: 20vw;
