@@ -19,10 +19,9 @@
         <a class="navigation" href="#home" id="home-button">Home</a><a class="navigation" href="#about" id="about-button">About</a><a class="navigation" href="#projects" id="project-button">Projects</a><a class="navigation" href="#work" id="work-button">Experience</a>
     </div>
     
-    <div class="main-parallax" id="parallax">
+    <div class="background" id="parallax">
     
         <div style="height: 0vh;" id="home"></div>
-
 
         <h1 class="menu-intro">Hi, my name is</h1>
         <h1 class="menu-name">Bruce</h1>
@@ -48,32 +47,35 @@
 
         <div class="text" id="projects" style="background-color: #41e287;">
             <h1 class="section-title">Ongoing Projects:</h1>
-            
+
             <div class="portfolio-row">
                 <div class="portfolio-column">
-                    <h1 class="portfolio-title">Pokémon Harvold</h1>
-                    <p class="portfolio-description">A browser-based multiplayer Pokemon game Game mechanics are based on first generation Pokmeon games in development with HTML/CSS and JavaScript. Future updates will use NodeJS, jQuery, socket.io and SQL.</p>
-                    <a href="https://github.com/brucejh99/Project-Harvold"><img src="project-images/pokemon-harvold.png" class="portfolio-image"></a>
+                    <a class="project-box" href="https://github.com/brucejh99/Project-Harvold">
+                        <img class="project-image" style="background-image: url(project-images/pokemon-harvold.png)">
+                        <div class="middle">A browser-based multiplayer Pokemon game Game mechanics are based on first generation Pokemon games in development with HTML/CSS and JavaScript. Future updates will use NodeJS, jQuery, socket.io and SQL.</div>
+                    </a>
                 </div>
                 <div class="portfolio-column">
-                <h1 class="portfolio-title">Zombie Survival</h1>
-                <p class="portfolio-description">A browser-based multiplayer zombie survival game with buildable and destructible terrain. In development with HTML/CSS, NodeJS, socket.io, Express and PhaserJS physics engine. Current version available <a href="http://multiplayergametest-webgametest.1d35.starter-us-east-1.openshiftapps.com/" style="color: white; text-decoration: underline;"><strong>here</strong></a>.</p>
-                <a href="https://github.com/jasonliu19/MultiplayerBrowserGame"><img src="project-images/zombie-game.png" class="portfolio-image"></a>
+                    <a class="project-box" href="https://github.com/jasonliu19/MultiplayerBrowserGame">
+                        <img class="project-image" style="background-image: url(project-images/zombie-game.png)">
+                        <div class="middle">A browser-based multiplayer zombie survival game with buildable and destructible terrain. In development with HTML/CSS, NodeJS, socket.io, Express and PhaserJS physics engine.</div>
+                    </a>
                 </div>
                 <div class="portfolio-column">
-                    <h1 class="portfolio-title">Minigames App</h1>
-                    <p class="portfolio-description">An Android single-device app made up of a suite of classic and spinoffs of classic minigames for those times when you get bored but can't get too invested in a game. Currently in development in Java using Android Studio.</p>
-                    <a href="https://github.com/brucejh99/Minigames"><img src="project-images/minigame-app.png" class="portfolio-image"></a>
+                    <a class="project-box" href="https://github.com/brucejh99/Minigames">
+                        <img class="project-image" style="background-image: url(project-images/minigame-app.png)">
+                        <div class="middle">An Android app made up of a suite of classic and spinoffs of classic minigames for those times when you get bored but can't get too invested in a game. In development with Java using Android Studio.</div>
+                    </a>
                 </div>
             </div>
-            
             <h1 class="section-title">Past Projects:</h1>
             
             <div class="portfolio-row">
                 <div class="portfolio-column">
-                    <h1 class="portfolio-title">Pink Box Apocalypse</h1>
-                    <p class="portfolio-description">A virtual reality survival game where players use grenades and slingshot explosives to survive waves of pink boxes using hand gestures. Developed for Oculus Rift in C# using Unity game engine and Leap Motion.</p>
-                    <a href="https://github.com/jasonliu19/Starterhacks"><img src="project-images/pink-box-apocalypse.jpg" class="portfolio-image"></a>
+                    <a class="project-box" href="https://github.com/jasonliu19/Starterhacks">
+                        <img class="project-image" style="background-image: url(project-images/pink-box-apocalypse.jpg)">
+                        <div class="middle">A VR survival game where players toss and shoot explosives and survive waves of pink boxes using hand gesture recognition. Developed for Oculus Rift in C# using Unity game engine and Leap Motion.</div>
+                    </a>
                 </div>
             </div>
         </div>
