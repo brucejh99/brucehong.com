@@ -206,7 +206,7 @@ div.background {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    font-size: 22px;
+    font-size: 2vmin;
 }
 
 .project-box:hover .project-image {
@@ -262,9 +262,14 @@ div.background {
     padding-bottom: 40vh;
 }
 
+@media only screen and (max-width: 1247px) {
+    .project-box:hover .middle {
+        opacity: 0;
+    }  
+}
+
 
 @media only screen and (max-width: 800px) {
-    
     body, html {
         margin: 0;
         width: 100vw;
@@ -299,22 +304,12 @@ div.background {
         width: 50vw;
     }
 
-    .portfolio-column {
-        width: 60vw;
-        padding-left: 5vw;
-        padding-right: 5vw;
-    }
     
     .text {
         width: 80vw;
         margin-left: 0vw;
         margin-right: 0vw;
         opacity: 0.9;
-    }
-    
-    .portfolio-row {
-        width: 80vw;
-        padding: 0;
     }
 
     .portfolio-image {
