@@ -303,7 +303,6 @@ div.background {
     .resume {
         width: 50vw;
     }
-
     
     .text {
         width: 80vw;
@@ -311,10 +310,16 @@ div.background {
         margin-right: 0vw;
         opacity: 0.9;
     }
+    
+    .portfolio-row {
+        height: auto;
+        width: 80vw;
+        padding-bottom: 5vh;
+    }
 
     .portfolio-image {
-        height: 60vw;
-        width: 60vw;
+        height: 80vw;
+        width: 80vw;
         padding-bottom: 5vh;
     }
     
@@ -324,6 +329,7 @@ div.background {
     }
     
     .work-text {
+        color: white;
         font-size: 30px;
         padding-top: 0;
         margin-top: 0;
