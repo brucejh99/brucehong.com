@@ -244,11 +244,14 @@ div.background {
 }
 
 .work-text {
+    margin: 0;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    line-height: 100%;
     font-family: 'Work Sans', sans-serif;
     display: inline-block;
-    font-size: 40px;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    font-size: 5vh;
+    vertical-align: middle;
 }
 
 .end {
