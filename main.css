@@ -99,6 +99,7 @@ div.background {
     margin-right: auto;
     border-radius: 50%;
     margin-top: 6.6vh;
+    transform: rotate(90deg);
 }
 
 .resume {
