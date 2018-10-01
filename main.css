@@ -210,7 +210,7 @@ div.background {
 }
 
 .project-box:hover .project-image {
-    filter: brightness(30%);
+    filter: brightness(20%);
 }
 
 .project-box:hover .middle {
