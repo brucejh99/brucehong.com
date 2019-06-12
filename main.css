@@ -247,8 +247,12 @@ div.background {
 }
 
 .work-logo {
-    height: 90%;
+    height: 100%;
     width: auto;
+}
+
+.shrunk-logo {
+    height: 80%;
 }
 
 .work-text {
