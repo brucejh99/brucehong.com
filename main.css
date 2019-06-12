@@ -248,6 +248,7 @@ div.background {
 
 .work-logo {
     height: 90%;
+    width: auto;
 }
 
 .work-text {
