@@ -218,6 +218,8 @@ div.background {
 }
 
 .work-box {
+    display: flex;
+    justify-content: space-between;
     background-color: white;
     color: black;
     width: 70vw;
@@ -236,14 +238,20 @@ div.background {
     border-radius: 65vw;
 }
 
-.work-logo {
+.work-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    float: left;
+    width: 40%;
+}
+
+.work-logo {
+    height: 90%;
 }
 
 .work-text {
+    width: 50%;
     margin: 0;
     padding-top: 5vh;
     padding-bottom: 5vh;
