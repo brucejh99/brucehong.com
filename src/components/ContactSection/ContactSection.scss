@@ -1,0 +1,20 @@
+.contact-section {
+    height: 50px;
+    max-width: 50%;
+    min-width: 280px;
+    position: absolute;
+    bottom: 25px;
+    right: 40px;
+    .icon {
+        height: 50px;
+        opacity: 0.21;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: opacity .25s ease-in-out;
+        -moz-transition: opacity .25s ease-in-out;
+        -webkit-transition: opacity .25s ease-in-out;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

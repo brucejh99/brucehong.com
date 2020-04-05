@@ -1,15 +1,19 @@
 import React from 'react';
-import './intro.scss';
-
 import Typewriter from 'typewriter-effect';
+import { ContactSection } from '../../components';
+import ProfilePicture from '../../assets/bitmojis/surprise.png';
+import './Intro.scss';
+
 
 function IntroScreen() {
   return (
     <div className="intro">
-      <div className="left">
+      <div className="half">
         <TitleWriter />
       </div>
-      <div className="right">
+      <div className="half">
+        <img src={ProfilePicture} alt='Profile picture' className='profile-picture' />
+        <ContactSection />
       </div>
     </div>
   );
@@ -17,7 +21,7 @@ function IntroScreen() {
 
 function TitleWriter() {
   const preDescription = `I'm a `;
-  const descriptions = ['developer.', 'student.', 'sports enthusiast.'];
+  const descriptions = ['student.', 'developer.', 'waterbottle designer.'];
   return (
     <Typewriter
       options={{
@@ -30,7 +34,7 @@ function TitleWriter() {
         typewriter
           .typeString('<strong>Hey,<strong>')
           .pauseFor(250)
-          .typeString('<strong> my name is Bruce.<strong>')
+          .typeString(`<strong> my name is Bruce.<strong>`)
           .pauseFor(250)
           .typeString('<br>')
           .pauseFor(400)
@@ -51,7 +55,7 @@ function TitleWriter() {
           .deleteChars(preDescription.length + descriptions[2].length)
           .pauseFor(500)
 
-          .typeString('Welcome to my site!')
+          .typeString(`Let's get in touch!`)
           .start();
       }}
     />
