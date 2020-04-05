@@ -1,2 +1,1 @@
-# brucehong.com
-Personal Site Development
+Personal website made with React. Hosted on Heroku.
