@@ -12,13 +12,13 @@ function ContactSection() {
       <a href='mailto:webmaster@example.com'>
         <img src={EmailIcon} alt='Email' className='icon' />
       </a>
-      <a href='https://www.facebook.com/xev.amadore.5/' target='_blank'>
+      <a href='https://www.facebook.com/xev.amadore.5/' rel='noopener noreferrer' target='_blank'>
         <img src={FacebookIcon} alt='Facebook' className='icon' />
       </a>
-      <a href='https://www.linkedin.com/in/brucejh99/' target='_blank'>
+      <a href='https://www.linkedin.com/in/brucejh99/' rel='noopener noreferrer' target='_blank'>
         <img src={LinkedinIcon} alt='Linkedin' className='icon' />
       </a>
-      <a href='https://github.com/brucejh99' target='_blank'>
+      <a href='https://github.com/brucejh99' rel='noopener noreferrer' target='_blank'>
         <img src={GithubIcon} alt='Github' className='icon' />
       </a>
     </div>

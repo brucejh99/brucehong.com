@@ -4,9 +4,9 @@
     display: flex;
     background-image: url('../../assets/skyline.svg');
     background-position-x: 15%;
-    background-position-y: 70%;
+    background-position-y: 87.5%;
     background-repeat: no-repeat;
-    background-size: 120%;
+    background-size: 115%;
     .half {
         height: 100%;
         width: 50%;
@@ -14,14 +14,18 @@
         display: flex;
         align-items: center;
         padding: 0 5%;
-        .title-writer {
-            font-family: ShareTechMono;
-            font-size: 48px;
+        .title-writer-wrapper {
+            padding-bottom: 20%;
+            .title-writer {
+                font-family: ShareTechMono;
+                font-size: 48px;
+            }
         }
         .profile-picture {
             width: 80%;
             float: center;
             border-radius: 50%;
+            padding-bottom: 20%;
         }
     }
 }

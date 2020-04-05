@@ -1,6 +1,8 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import { ContactSection } from '../../components';
+import BreakingPaper1 from '../../assets/bitmojis/breaking-paper-1.png';
+import BreakingPaper2 from '../../assets/bitmojis/breaking-paper-2.png';
 import ProfilePicture from '../../assets/bitmojis/surprise.png';
 import './Intro.scss';
 
@@ -9,10 +11,12 @@ function IntroScreen() {
   return (
     <div className="intro">
       <div className="half">
-        <TitleWriter />
+        <div className='title-writer-wrapper'>
+          <TitleWriter />
+        </div>
       </div>
       <div className="half">
-        <img src={ProfilePicture} alt='Profile picture' className='profile-picture' />
+        <AnimatedIntroPicture />
         <ContactSection />
       </div>
     </div>
@@ -32,6 +36,7 @@ function TitleWriter() {
       }}
       onInit={typewriter => {
         typewriter
+          .pauseFor(3500)
           .typeString('<strong>Hey,<strong>')
           .pauseFor(250)
           .typeString(`<strong> my name is Bruce.<strong>`)
@@ -60,6 +65,41 @@ function TitleWriter() {
       }}
     />
   );
+}
+
+class AnimatedIntroPicture extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      picture: null
+    }
+  }
+
+  componentDidMount() {
+    this.breakPaper();
+  }
+
+  breakPaper() {
+    const showProfilePicture = () => {
+      setTimeout(() => {
+        this.setState({ picture: ProfilePicture });
+      }, 1000);
+    }
+    const showPaper2 = () => {
+      setTimeout(() => {
+        this.setState({ picture: BreakingPaper2 }, showProfilePicture);
+      }, 1000);
+    }
+    setTimeout(() => {
+      this.setState({ picture: BreakingPaper1 }, showPaper2);
+    }, 1000);
+  }
+
+  render() {
+    return (
+      this.state.picture ? <img src={this.state.picture} alt='Hello bitmoji' className='profile-picture' /> : null
+    );
+  }
 }
 
 export default IntroScreen;
