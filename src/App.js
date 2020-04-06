@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { IntroScreen } from './screens';
 import { Navbar } from './components';
 import './App.scss';
 
 // holds display order of each view and icons
-function App() {
+const App = () => {
   return (
     <div className="app">
       <Navbar />
-      <IntroScreen />
-      <IntroScreen />
+      <IntroScreen id='home' />
+      <IntroScreen id='about' />
+      <IntroScreen id='exp' />
+      <IntroScreen id='projects' />
     </div>
   );
 }

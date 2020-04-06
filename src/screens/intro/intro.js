@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import Typewriter from 'typewriter-effect';
 import { ContactSection } from '../../components';
 import BreakingPaper1 from '../../assets/bitmojis/breaking-paper-1.png';
@@ -7,20 +7,22 @@ import ProfilePicture from '../../assets/bitmojis/surprise.png';
 import './Intro.scss';
 
 
-function IntroScreen() {
-  return (
-    <div className="intro">
-      <div className="half">
-        <div className='title-writer-wrapper'>
-          <TitleWriter />
+class IntroScreen extends PureComponent {
+  render() {
+    return (
+      <div id={this.props.id || null} className='intro'>
+        <div className='half'>
+          <div className='title-writer-wrapper'>
+            <TitleWriter />
+          </div>
+        </div>
+        <div className='half'>
+          <AnimatedIntroPicture />
+          <ContactSection />
         </div>
       </div>
-      <div className="half">
-        <AnimatedIntroPicture />
-        <ContactSection />
-      </div>
-    </div>
-  );
+    );
+  }
 }
 
 function TitleWriter() {
