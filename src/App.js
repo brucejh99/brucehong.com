@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { IntroScreen } from './screens';
+import React from 'react';
+import { IntroSection, AboutSection } from './screens';
 import { Navbar } from './components';
 import './App.scss';
 
@@ -8,10 +8,10 @@ const App = () => {
   return (
     <div className="app">
       <Navbar />
-      <IntroScreen id='home' />
-      <IntroScreen id='about' />
-      <IntroScreen id='exp' />
-      <IntroScreen id='projects' />
+      <IntroSection id='home' />
+      <AboutSection id='about' />
+      <IntroSection id='exp' />
+      <IntroSection id='projects' />
     </div>
   );
 }

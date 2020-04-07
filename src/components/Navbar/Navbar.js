@@ -2,33 +2,33 @@ import React, { Component } from 'react';
 import smoothscroll from 'smoothscroll-polyfill';
 import './Navbar.scss';
 
+const NAVBAR_HEIGHT = 36;
+
 // holds display order of each view and icons
 class Navbar extends Component {
-  constructor(props) {
-    super(props);
-    this.homeRef = null;
-    this.aboutRef = null;
-    this.expRef = null;
-    this.projectsRef = null;
-    this.state = {
-      activePage: 1
-    }
+  state = {
+    activePage: 1
   }
 
   componentDidMount() {
     this.setWindowDimensions();
+    this.setActive();
     window.addEventListener('scroll', this.setActive.bind(this));
-    window.addEventListener('resize', this.setWindowDimensions.bind(this));
+    window.addEventListener('resize', this.handleResize.bind(this));
+  }
+
+  handleResize() {
+    this.setWindowDimensions();
+    this.setActive();
   }
 
   setWindowDimensions() {
-    this.homeOffset = document.getElementById('home').offsetTop;
-    this.aboutOffset = document.getElementById('about').offsetTop;
-    this.expOffset = document.getElementById('exp').offsetTop;
-    this.projectsOffset = document.getElementById('projects').offsetTop;
+    this.homeOffset = document.getElementById('home').offsetTop - NAVBAR_HEIGHT;
+    this.aboutOffset = document.getElementById('about').offsetTop - NAVBAR_HEIGHT;
+    this.expOffset = document.getElementById('exp').offsetTop - NAVBAR_HEIGHT;
+    this.projectsOffset = document.getElementById('projects').offsetTop - NAVBAR_HEIGHT;
     // polyfill for browsers that don't support smooth scroll natively
     smoothscroll.polyfill();
-    this.setActive();
   }
 
   setActive() {

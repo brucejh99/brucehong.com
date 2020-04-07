@@ -1,0 +1,19 @@
+.about {
+    width: 100vw;
+    height: calc(100vh - 36px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: salmon;
+    .wave-picture {
+        position: absolute;
+        right: 0;
+        height: 50%;
+    }
+    .description {
+        font-family: ShareTechMono;
+        font-size: 24px;
+        padding-right: 15%;
+        width: 50%;
+    }
+}

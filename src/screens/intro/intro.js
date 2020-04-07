@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import Typewriter from 'typewriter-effect';
 import { ContactSection } from '../../components';
 import BreakingPaper1 from '../../assets/bitmojis/breaking-paper-1.png';
@@ -7,22 +7,20 @@ import ProfilePicture from '../../assets/bitmojis/surprise.png';
 import './Intro.scss';
 
 
-class IntroScreen extends PureComponent {
-  render() {
-    return (
-      <div id={this.props.id || null} className='intro'>
-        <div className='half'>
-          <div className='title-writer-wrapper'>
-            <TitleWriter />
-          </div>
-        </div>
-        <div className='half'>
-          <AnimatedIntroPicture />
-          <ContactSection />
+function IntroSection(props) {
+  return (
+    <div id={props.id || null} className='intro'>
+      <div className='half'>
+        <div className='title-writer-wrapper'>
+          <TitleWriter />
         </div>
       </div>
-    );
-  }
+      <div className='half'>
+        <AnimatedIntroPicture />
+        <ContactSection />
+      </div>
+    </div>
+  );
 }
 
 function TitleWriter() {
@@ -69,7 +67,7 @@ function TitleWriter() {
   );
 }
 
-class AnimatedIntroPicture extends React.Component {
+class AnimatedIntroPicture extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -104,4 +102,4 @@ class AnimatedIntroPicture extends React.Component {
   }
 }
 
-export default IntroScreen;
+export default IntroSection;
