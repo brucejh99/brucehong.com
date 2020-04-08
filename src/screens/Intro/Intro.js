@@ -97,7 +97,7 @@ class AnimatedIntroPicture extends Component {
 
   render() {
     return (
-      this.state.picture ? <img src={this.state.picture} alt='Hello bitmoji' className='profile-picture' /> : null
+      this.state.picture ? <img src={this.state.picture} alt='My bitmoji was supposed to pop out here' className='profile-picture' /> : null
     );
   }
 }
