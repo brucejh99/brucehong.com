@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import smoothscroll from 'smoothscroll-polyfill';
 import './Navbar.scss';
 
-const NAVBAR_HEIGHT = 36;
+const NAVBAR_HEIGHT = 24;
 
 // holds display order of each view and icons
 class Navbar extends Component {

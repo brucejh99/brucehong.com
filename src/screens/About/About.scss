@@ -4,16 +4,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: salmon;
-    .wave-picture {
-        position: absolute;
-        right: 0;
-        height: 50%;
-    }
     .description {
         font-family: ShareTechMono;
         font-size: 24px;
-        padding-right: 15%;
         width: 50%;
+        text-align: center;
+    }
+    .waterloo-logo {
+        height: 60vh;
+        left: -30vh;
+        position: absolute;
+        opacity: 0.1;
     }
 }
