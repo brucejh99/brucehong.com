@@ -1,10 +1,12 @@
 .contact-section {
     height: 50px;
-    max-width: 50%;
+    width: 100%;
     min-width: 280px;
-    position: absolute;
+    position: fixed;
     bottom: 25px;
-    right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .icon {
         height: 50px;
         opacity: 0.21;

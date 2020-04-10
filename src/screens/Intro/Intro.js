@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Typewriter from 'typewriter-effect';
-import { ContactSection } from '../../components';
 import BreakingPaper1 from '../../assets/bitmojis/breaking-paper-1.png';
 import BreakingPaper2 from '../../assets/bitmojis/breaking-paper-2.png';
 import ProfilePicture from '../../assets/bitmojis/surprise.png';
@@ -17,7 +16,6 @@ function IntroSection(props) {
       </div>
       <div className='half'>
         <AnimatedIntroPicture />
-        <ContactSection />
       </div>
     </div>
   );
