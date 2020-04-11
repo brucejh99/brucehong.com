@@ -8,7 +8,7 @@ import './Intro.scss';
 
 function IntroSection(props) {
   return (
-    <div id={props.id || null} className='intro'>
+    <div id={props.id || 'home'} className='intro'>
       <div className='half'>
         <div className='title-writer-wrapper'>
           <TitleWriter />

@@ -1,5 +1,5 @@
 import React from 'react';
-import { IntroSection, AboutSection } from './screens';
+import { IntroSection, AboutSection, ExperienceSection, ProjectSection } from './screens';
 import { Navbar, ContactSection } from './components';
 import './App.scss';
 
@@ -9,10 +9,11 @@ const App = () => {
     <div className="app">
       <Navbar />
       <ContactSection />
-      <IntroSection id='home' />
-      <AboutSection id='about' />
-      <IntroSection id='exp' />
-      <IntroSection id='projects' />
+      
+      <IntroSection />
+      <AboutSection />
+      <ExperienceSection />
+      <ProjectSection />
     </div>
   );
 }

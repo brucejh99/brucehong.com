@@ -1,17 +1,17 @@
 .contact-section {
+    bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 50px;
     width: 100%;
     min-width: 280px;
     position: fixed;
-    bottom: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     .icon {
-        height: 50px;
-        opacity: 0.21;
-        margin: 0 5px;
         cursor: pointer;
+        height: 50px;
+        margin: 0 5px;
+        opacity: 0.21;
         transition: opacity .25s ease-in-out;
         -moz-transition: opacity .25s ease-in-out;
         -webkit-transition: opacity .25s ease-in-out;
