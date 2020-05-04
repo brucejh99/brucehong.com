@@ -1,5 +1,14 @@
 .projects {
-    height: calc(100vh - 24px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    // height: calc(100vh - 24px);
     width: 100%;
-    background-color: chartreuse;
+    h1 {
+        font-family: ShareTechMono;
+        font-size: 24px;
+        padding: 20px 0 0 0;
+        text-align: center;
+        width: 100%;
+    }
 }

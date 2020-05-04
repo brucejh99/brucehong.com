@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Typewriter from 'typewriter-effect';
-import BreakingPaper1 from '../../assets/bitmojis/breaking-paper-1.png';
-import BreakingPaper2 from '../../assets/bitmojis/breaking-paper-2.png';
-import ProfilePicture from '../../assets/bitmojis/surprise.png';
+import BreakingPaper1 from 'assets/bitmojis/breaking-paper-1.png';
+import BreakingPaper2 from 'assets/bitmojis/breaking-paper-2.png';
+import ProfilePicture from 'assets/bitmojis/surprise.png';
 import './Intro.scss';
 
 

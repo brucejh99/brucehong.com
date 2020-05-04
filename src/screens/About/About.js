@@ -1,8 +1,8 @@
 import React from 'react';
-import readingBitmoji from '../../assets/bitmojis/student.png';
-import waterlooLogo from '../../assets/icons/waterloo.svg';
-import laurierLogo from '../../assets/icons/laurier.png';
-import resume from '../../assets/resume.pdf';
+import readingBitmoji from 'assets/bitmojis/student.png';
+import waterlooLogo from 'assets/icons/waterloo.svg';
+import laurierLogo from 'assets/icons/laurier.png';
+import resume from 'assets/resume.pdf';
 import './About.scss';
 
 function AboutSection(props) {

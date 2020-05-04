@@ -1,6 +1,6 @@
 import React from 'react';
-import { IntroSection, AboutSection, ExperienceSection, ProjectSection } from './screens';
-import { Navbar, ContactSection } from './components';
+import { IntroSection, AboutSection, ExperienceSection, ProjectSection } from 'screens';
+import { Navbar, ContactSection } from 'components';
 import './App.scss';
 
 // holds display order of each view and icons
@@ -9,7 +9,7 @@ const App = () => {
     <div className="app">
       <Navbar />
       <ContactSection />
-      
+
       <IntroSection />
       <AboutSection />
       <ExperienceSection />
