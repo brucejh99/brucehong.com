@@ -9,7 +9,7 @@ const experienceObject = [
         logo: PixleeLogo,
         title: "Software Engineering Intern",
         description: [
-            "Make thing 1"
+            "Under construction"
         ]
     },
     {
@@ -17,9 +17,15 @@ const experienceObject = [
         logo: SMSLogo,
         title: "Software Developer",
         description: [
-            "Make thing 1",
-            "Make thing 2",
-            "Make thing 3"
+            "Under construction"
+        ]
+    },
+    {
+        companyName: "Finastra",
+        logo: SMSLogo,
+        title: "Software Developer",
+        description: [
+            "Under construction (and wrong logo)"
         ]
     }
 ];

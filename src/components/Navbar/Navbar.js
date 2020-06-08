@@ -28,11 +28,12 @@ class Navbar extends Component {
     this.expOffset = document.getElementById('exp').offsetTop - NAVBAR_HEIGHT;
     this.projectsOffset = document.getElementById('projects').offsetTop - NAVBAR_HEIGHT;
     // polyfill for browsers that don't support smooth scroll natively
+    // TODO: see if this can be moved to componentDidMount
     smoothscroll.polyfill();
   }
 
   setActive() {
-    const offset = window.pageYOffset;
+    const offset = Math.round(window.pageYOffset);
     if(offset < this.aboutOffset) {
       this.setState({ activePage: 'home' });
     } else if(offset < this.expOffset) {
