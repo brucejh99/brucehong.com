@@ -1,19 +1,20 @@
 import React from 'react';
 import { IntroSection, AboutSection, ExperienceSection, ProjectSection } from 'screens';
-import { Navbar, ContactSection } from 'components';
+import { Navbar, ContactSection, Renovation } from 'components';
 import './App.scss';
 
 // holds display order of each view and icons
 const App = () => {
   return (
-    <div className="app">
-      <Navbar />
+    <div className='app'>
+      {/* <Navbar /> */}
+      <Renovation />
       <ContactSection />
 
       <IntroSection />
-      <AboutSection />
+      {/* <AboutSection />
       <ExperienceSection />
-      <ProjectSection />
+      <ProjectSection /> */}
     </div>
   );
 }
