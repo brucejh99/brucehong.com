@@ -1,51 +1,85 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import PixleeLogo from 'assets/company-logos/Pixlee.png';
 import SMSLogo from 'assets/company-logos/SMS.png';
+import FinastraLogo from 'assets/company-logos/Finastra.png';
+
+import 'swiper/swiper.scss';
+import 'swiper/components/navigation/navigation.scss';
+import 'swiper/components/pagination/pagination.scss';
+import 'swiper/components/scrollbar/scrollbar.scss';
 import './Experience.scss';
 
 const experienceObject = [
     {
+        index: 0,
         companyName: "Pixlee",
         logo: PixleeLogo,
         title: "Software Engineering Intern",
-        description: [
-            "Under construction"
-        ]
+        date: "Jan 2020 - May 2020",
+        description: "Under construction pixlee"
     },
     {
+        index: 1,
         companyName: "Secret Mission Software",
         logo: SMSLogo,
         title: "Software Developer",
-        description: [
-            "Under construction"
-        ]
+        date: "Jan 2019 - Apr 2019",
+        description: "Under construction sms"
     },
     {
+        index: 2,
         companyName: "Finastra",
-        logo: SMSLogo,
+        logo: FinastraLogo,
         title: "Software Developer",
-        description: [
-            "Under construction (and wrong logo)"
-        ]
+        date: "May 2018 - Aug 2018",
+        description: "Under construction finastra"
     }
 ];
 
 
-function ExperienceSection(props) {
-    return (
-        <div id={props.id || 'exp'} className='experience'>
-            {experienceObject.map(exp => (
-                <div className='section'>
-                    <img src={exp.logo} alt='Company Logo' className='logo' />
-                    <div className='description'>
-                        <h2>{exp.companyName}</h2>
-                        <h3>{exp.title}</h3>
-                        {exp.description.map(point => <p>{`- ${point}`}</p>)}
+class ExperienceSection extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            activeIndex: 0
+        }
+    }
+
+    render() {
+        const { props, state } = this;
+        const {
+            companyName: activeCompany,
+            title: activeTitle,
+            date: activeDate,
+            description: activeDescription
+        } = experienceObject[state.activeIndex];
+        console.log(experienceObject[state.activeIndex]);
+        return (
+            <div id={props.id || 'exp'} className='experience'>
+                <div className='expLeft'>
+                    <h1>Experience</h1>
+                    <p>My past internships in software.</p>
+                </div>
+                <div className='expRight'>
+                    <div className='expBar'>
+                        {experienceObject.map(exp => (
+                            <img
+                                onMouseEnter={() => this.setState({ activeIndex: exp.index })}
+                                src={exp.logo}
+                                alt='Logo'
+                                className='expItem'
+                            />
+                        ))}
+                    </div>
+                    <div className='expDescription'>
+                        <h1>{activeCompany}</h1>
+                        <h2>{`${activeTitle} | ${activeDate}`}</h2>
                     </div>
                 </div>
-            ))}
-        </div>
-    );
+            </div>
+        );
+    }
 }
 
 export default ExperienceSection;

@@ -13,8 +13,8 @@ const App = () => {
 
       <IntroSection />
       {/* <AboutSection />
-      <ExperienceSection />
-      <ProjectSection /> */}
+      <ExperienceSection /> */}
+      {/* <ProjectSection /> */}
     </div>
   );
 }

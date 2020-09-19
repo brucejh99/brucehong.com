@@ -1,34 +1,61 @@
 .experience {
-    min-height: calc(100% - 24px);
-    width: 100%;
-    .section {
-        display: inline-flex;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 5%;
-        width: 90%;
-        .logo {
-            margin-right: 5%;
-            width: 15%;
+    display: flex;
+    justify-content: center;
+    padding: 0 10%;
+    height: 100vh;
+    width: 80%;
+    .expLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 33%;
+        h1 {
+            font-family: ShareTechMono;
+            font-size: 2.5em;
+            margin: 0;
+            width: 100%;
         }
-        .description {
-            width: 70%;
-            h2 {
+        p {
+            font-family: ShareTechMono;
+            font-size: 1em;
+            width: 100%;
+        }
+    }
+    .expRight {
+        height: 70%;
+        width: 100%;
+        margin: auto;
+        .expBar {
+            align-items: center;
+            display: flex;
+            height: 50%;
+            width: 100%;
+            justify-content: center;
+            .expItem {
+                height: 50%;
+                margin-left: 2.5%;
+            }
+        }
+        .expDescription {
+            height: 50%;
+            width: 100%;
+            h1 {
                 font-family: ShareTechMono;
-                font-size: 24px;
+                font-size: 2.5em;
+                align-self: center;
                 margin: 0;
                 width: 100%;
             }
-            h3 {
+            h2 {
                 font-family: ShareTechMono;
-                font-size: 18px;
+                font-size: 1.5em;
                 margin: 0;
                 width: 100%;
             }
             p {
                 font-family: ShareTechMono;
-                font-size: 14px;
-                margin: 0.5em 0 0 0;
+                font-size: 1em;
+                margin: 0;
                 width: 100%;
             }
         }

@@ -23,7 +23,7 @@ function IntroSection(props) {
 
 function TitleWriter() {
   const preDescription = `I'm a `;
-  const descriptions = ['student.', 'developer.', 'waterbottle designer.'];
+  const descriptions = ['student.', 'developer.', 'metalhead.'];
   return (
     <Typewriter
       options={{
@@ -58,7 +58,7 @@ function TitleWriter() {
           .deleteChars(preDescription.length + descriptions[2].length)
           .pauseFor(500)
 
-          .typeString(`Let's get in touch!`)
+          .typeString('Welcome to my site!')
           .start();
       }}
     />

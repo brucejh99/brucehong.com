@@ -14,7 +14,7 @@ function AboutSection(props) {
             <p className='description'>
                 I'm a fourth-year Computer Science and Business Administration student at 
                 the University of Waterloo. I'm experienced in full-stack web development
-                with a focus on building...<br />
+                looking to build clean, impactful products.<br />
                 <a href={resume} target='_blank' rel='noopener noreferrer'>
                     <button>Résumé</button>
                 </a>
