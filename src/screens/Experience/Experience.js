@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import PixleeLogo from 'assets/company-logos/Pixlee.png';
 import SMSLogo from 'assets/company-logos/SMS.png';
 import FinastraLogo from 'assets/company-logos/Finastra.png';
 
-import 'swiper/swiper.scss';
-import 'swiper/components/navigation/navigation.scss';
-import 'swiper/components/pagination/pagination.scss';
-import 'swiper/components/scrollbar/scrollbar.scss';
 import './Experience.scss';
 
 const experienceObject = [
